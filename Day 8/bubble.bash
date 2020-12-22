@@ -2,7 +2,7 @@
 read -p "Enter the array elements: " -a arr
 echo "Array elements: "
 for elem in "${arr[@]}"
-do
+do 
     echo -ne "$elem  "
 done
 echo
@@ -13,11 +13,11 @@ for (( i = 0; i < ${#arr[@]}-1; i++ )); do
             arr[$j]=${arr[$j+1]}
             arr[$j+1]=$t
         fi
-    done
+    done 
 done
 echo "Sorted Array elements: "
 for elem in "${arr[@]}"
-do
+do 
     echo -ne "$elem  "
 done
 echo
